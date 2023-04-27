@@ -8,9 +8,6 @@ public class DialogueNodeSplitItem : DialogueNode
     TextAsset DialogueText;
 
     [SerializeField]
-    InventoryItem.ItemType RequiredItem;
-
-    [SerializeField]
     DialogueNode NextNodeIfHasItem;
     [SerializeField]
     DialogueNode NextNodeIfNoItem;
@@ -29,13 +26,9 @@ public class DialogueNodeSplitItem : DialogueNode
 
     public override DialogueNode GetNextNode()
     {
-        InventoryManager inventoryManager = FindObjectOfType<InventoryManager>();
-        if (inventoryManager != null)
+        if (true)
         {
-            if (inventoryManager.CheckHasItem(RequiredItem))
-            {
-                return NextNodeIfHasItem;
-            }
+            return NextNodeIfHasItem;
         }
         return NextNodeIfNoItem;
     }

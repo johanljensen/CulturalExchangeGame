@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class TextBoxHandler : MonoBehaviour
 {
-    private InventoryManager InventoryManager;
-
     public GameObject SimpleDialogue;
     public TextMeshProUGUI SimpleDialogueText;
     public Button SimpleDialogueButton;
@@ -23,7 +21,7 @@ public class TextBoxHandler : MonoBehaviour
 
     private void Start()
     {
-        InventoryManager = FindObjectOfType<InventoryManager>();
+
     }
 
     private void SetActiveStates(bool isMultiChoice)
@@ -57,15 +55,12 @@ public class TextBoxHandler : MonoBehaviour
         List<DialogueChoice> choices = nodeMulti.GetChoices();
         for (int x = 0; x < choices.Count; x++)
         {
-            InventoryItem.ItemType requiredItem = choices[x].GetRequiredItem();
-            if (requiredItem == InventoryItem.ItemType.None || (InventoryManager != null && InventoryManager.CheckHasItem(requiredItem)))
-            {
-                int CurrentIndex = x;
-                ChoiceTexts[x].gameObject.SetActive(true);
-                ChoiceTexts[x].text = choices[x].GetText();
-                ChoiceButtons[x].onClick.RemoveAllListeners();
-                ChoiceButtons[x].onClick.AddListener(() => nodeMulti.GetChoiceNode(CurrentIndex).OpenNode(this));
-            }
+            int CurrentIndex = x;
+            ChoiceTexts[x].gameObject.SetActive(true);
+            ChoiceTexts[x].text = choices[x].GetText();
+            ChoiceButtons[x].onClick.RemoveAllListeners();
+            ChoiceButtons[x].onClick.AddListener(() => nodeMulti.GetChoiceNode(CurrentIndex).OpenNode(this));
+
         }
     }
 

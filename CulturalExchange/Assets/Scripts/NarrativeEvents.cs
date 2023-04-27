@@ -7,13 +7,6 @@ public class NarrativeEvents : MonoBehaviour
     [SerializeField]
     NarrativeStates States;
 
-    [SerializeField]
-    InventoryItem powerBankPrefab;
-    [SerializeField]
-    InventoryItem mapPrefab;
-    [SerializeField]
-    InventoryItem mapUpgradePrefab;
-
     private void Start()
     {
         States = FindObjectOfType<NarrativeStates>();
