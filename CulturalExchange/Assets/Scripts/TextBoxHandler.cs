@@ -16,13 +16,8 @@ public class TextBoxHandler : MonoBehaviour
     public List<TextMeshProUGUI> ChoiceTexts;
     public List<Button> ChoiceButtons;
 
-    public GameObject GameOverUI;
-    public GameObject EscapeUI;
-
-    private void Start()
-    {
-
-    }
+    private DialogueNode currentNode;
+    public DialogueNode GetCurrentNode() { return currentNode; }
 
     private void SetActiveStates(bool isMultiChoice)
     {
@@ -37,6 +32,7 @@ public class TextBoxHandler : MonoBehaviour
 
     public void SetSimpleDialogue(DialogueNode nodeSingle)
     {
+        currentNode = nodeSingle;
         Debug.Log("Setting single node");
         SetActiveStates(false);
 
@@ -47,6 +43,7 @@ public class TextBoxHandler : MonoBehaviour
 
     public void SetChoiceDialogue(DialogueNodeMulti nodeMulti)
     {
+        currentNode = nodeMulti;
         Debug.Log("Setting multi node");
         SetActiveStates(true);
 
@@ -62,21 +59,5 @@ public class TextBoxHandler : MonoBehaviour
             ChoiceButtons[x].onClick.AddListener(() => nodeMulti.GetChoiceNode(CurrentIndex).OpenNode(this));
 
         }
-    }
-
-    public void DisplayGameOver()
-    {
-        SetActiveStates(false);
-        SimpleDialogue.SetActive(false);
-
-        GameOverUI.SetActive(true);
-    }
-
-    public void DisplayEscape()
-    {
-        SetActiveStates(false);
-        SimpleDialogue.SetActive(false);
-
-        EscapeUI.SetActive(true);
     }
 }

@@ -9,16 +9,24 @@ public class NarrativeEvents : MonoBehaviour
 
     private void Start()
     {
-        States = FindObjectOfType<NarrativeStates>();
+        if (States == null)
+        {
+            States = FindObjectOfType<NarrativeStates>();
+        }
     }
 
-    public void SetStateHurtLegHelped()
+    public void SetStateCorrectMilk()
     {
-        States.HelpedHurtLeg();
+        States.ChoseCorrectMilk();
     }
 
-    public void SetStateCryingGirlHelped()
+    public void SetStateCorrectBread()
     {
-        States.HelpedCryingGirl();
+        States.ChoseCorrectBread();
+    }
+
+    public void SetStateCorrectMeat()
+    {
+        States.ChoseCorrectMeat();
     }
 }

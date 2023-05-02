@@ -7,21 +7,26 @@ public class NarrativeStates : MonoBehaviour
     public enum StoryStates
     {
         None,
-        HurtLegHelped,
-        CryingGirlHelped
+        CorrectMilk,
+        CorrectBread,
+        CorrectMeat
     }
 
     [SerializeField]
     List<StoryStates> CheckedStates;
 
-    public void HelpedHurtLeg()
+    public void ChoseCorrectMilk()
     {
-        CheckedStates.Add(StoryStates.HurtLegHelped);
+        CheckedStates.Add(StoryStates.CorrectMilk);
     }
 
-    public void HelpedCryingGirl()
+    public void ChoseCorrectBread()
     {
-        CheckedStates.Add(StoryStates.CryingGirlHelped);
+        CheckedStates.Add(StoryStates.CorrectBread);
+    }
+    public void ChoseCorrectMeat()
+    {
+        CheckedStates.Add(StoryStates.CorrectMeat);
     }
 
     public bool IsStateChecked(StoryStates state)
