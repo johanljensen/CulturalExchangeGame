@@ -60,4 +60,24 @@ public class TextBoxHandler : MonoBehaviour
 
         }
     }
+
+    public void SetChoiceDialogueTranslate(DialogueNodeMultiTranslate nodeMulti)
+    {
+        currentNode = nodeMulti;
+        Debug.Log("Setting multi node");
+        SetActiveStates(true);
+
+        ChoiceDialoguePrompt.text = nodeMulti.GetText();
+
+        List<DialogueChoiceTranslate> choices = nodeMulti.GetChoices();
+        for (int x = 0; x < choices.Count; x++)
+        {
+            int CurrentIndex = x;
+            ChoiceTexts[x].gameObject.SetActive(true);
+            ChoiceTexts[x].text = choices[x].GetText();
+            ChoiceButtons[x].onClick.RemoveAllListeners();
+            ChoiceButtons[x].onClick.AddListener(() => nodeMulti.GetChoiceNode(CurrentIndex).OpenNode(this));
+
+        }
+    }
 }

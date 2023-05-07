@@ -26,7 +26,7 @@ public class DialogueNodeMulti : DialogueNode
         return ChoicePrompt.text;
     }
 
-    public List<DialogueChoice> GetChoices()
+    public virtual List<DialogueChoice> GetChoices()
     {
         return Choices;
     }

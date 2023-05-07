@@ -52,7 +52,7 @@ public class DialogueTranslater : MonoBehaviour
     {
         string translateString = "";
 
-        foreach (DialogueChoiceTranslate choice in currentNode.GetChoicesTranslate())
+        foreach (DialogueChoiceTranslate choice in currentNode.GetChoices())
         {
             translateString += choice.GetTranslation();
         }
