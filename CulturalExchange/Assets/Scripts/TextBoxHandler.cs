@@ -57,7 +57,6 @@ public class TextBoxHandler : MonoBehaviour
             ChoiceTexts[x].text = choices[x].GetText();
             ChoiceButtons[x].onClick.RemoveAllListeners();
             ChoiceButtons[x].onClick.AddListener(() => nodeMulti.GetChoiceNode(CurrentIndex).OpenNode(this));
-
         }
     }
 
@@ -77,7 +76,6 @@ public class TextBoxHandler : MonoBehaviour
             ChoiceTexts[x].text = choices[x].GetText();
             ChoiceButtons[x].onClick.RemoveAllListeners();
             ChoiceButtons[x].onClick.AddListener(() => nodeMulti.GetChoiceNode(CurrentIndex).OpenNode(this));
-
         }
     }
 }
