@@ -9,7 +9,8 @@ public class NarrativeStates : MonoBehaviour
         None,
         CorrectMilk,
         CorrectBread,
-        CorrectMeat
+        CorrectMeat,
+        AllCorrectGroceries
     }
 
     [SerializeField]
@@ -18,15 +19,28 @@ public class NarrativeStates : MonoBehaviour
     public void ChoseCorrectMilk()
     {
         CheckedStates.Add(StoryStates.CorrectMilk);
+        CheckCorrectGroceries();
     }
 
     public void ChoseCorrectBread()
     {
         CheckedStates.Add(StoryStates.CorrectBread);
+        CheckCorrectGroceries();
     }
     public void ChoseCorrectMeat()
     {
         CheckedStates.Add(StoryStates.CorrectMeat);
+        CheckCorrectGroceries();
+    }
+
+    private void CheckCorrectGroceries()
+    {
+        if (IsStateChecked(StoryStates.CorrectMilk) &&
+            IsStateChecked(StoryStates.CorrectBread) &&
+            IsStateChecked(StoryStates.CorrectMeat))
+        {
+            CheckedStates.Add(StoryStates.AllCorrectGroceries);
+        }
     }
 
     public bool IsStateChecked(StoryStates state)
