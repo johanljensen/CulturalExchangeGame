@@ -153,7 +153,7 @@ public class DialogueTranslater : MonoBehaviour
             }
             yield return new WaitForSeconds(0.3f);
 
-            workingString += " ";
+            workingString += ": ";
             workingString += gibberish.GetTranslation();
             workingString += "\n";
             translaterText.text = workingString;

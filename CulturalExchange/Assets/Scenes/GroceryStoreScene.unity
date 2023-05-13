@@ -123,6 +123,55 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &45986134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 45986135}
+  - component: {fileID: 45986136}
+  m_Layer: 0
+  m_Name: ExplainTranslater
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &45986135
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45986134}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1538732477}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &45986136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45986134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NodeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  DialogueText: {fileID: 4900000, guid: 4ffa1166c3931104788f8d53a57c5bf5, type: 3}
+  NextNode: {fileID: 846877131}
 --- !u!1 &106348278
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,6 +245,16 @@ Transform:
   m_Father: {fileID: 645424907}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &106923907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 649817304791816667, guid: 42cd80c94210a744c8fe0208a9d07d6c, type: 3}
+  m_PrefabInstance: {fileID: 9139196506393241572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &129219651 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6307001632345416368, guid: 42cd80c94210a744c8fe0208a9d07d6c, type: 3}
+  m_PrefabInstance: {fileID: 9139196506393241572}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &130515670
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,7 +289,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 957946347}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   ChoicePrompt: {fileID: 4900000, guid: fc0b17aefa1a39a4bbdedee93dc87d16, type: 3}
   Choices:
   - {fileID: 130515674}
@@ -308,7 +379,7 @@ GameObject:
   - component: {fileID: 260594260}
   - component: {fileID: 260594259}
   m_Layer: 0
-  m_Name: BreadWhiteChoice
+  m_Name: BreadBrownChoice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -476,7 +547,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1123084098}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &514225611
 GameObject:
@@ -508,7 +579,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 900036719}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &514225613
 MonoBehaviour:
@@ -755,7 +826,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1538732477}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &846877131
 MonoBehaviour:
@@ -832,7 +903,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 106923907}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   DialogueText: {fileID: 4900000, guid: 6e3229046427d5f4cb8d44bd0c4af849, type: 3}
   NextNode: {fileID: 1195064979}
 --- !u!1 &900036718
@@ -865,9 +948,9 @@ Transform:
   m_Children:
   - {fileID: 892680053}
   - {fileID: 1195064975}
-  - {fileID: 514225612}
-  - {fileID: 1867203193}
   - {fileID: 2076600253}
+  - {fileID: 1867203193}
+  - {fileID: 514225612}
   m_Father: {fileID: 1976750295}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -939,6 +1022,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &957946347 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5774414123150078948, guid: 42cd80c94210a744c8fe0208a9d07d6c, type: 3}
+  m_PrefabInstance: {fileID: 9139196506393241572}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &978907236
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,7 +1087,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   DialogueText: {fileID: 4900000, guid: 9905ab25601f23f4995f933997922698, type: 3}
-  NextNode: {fileID: 846877131}
+  NextNode: {fileID: 45986136}
 --- !u!1 &979734873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,7 +1099,7 @@ GameObject:
   - component: {fileID: 979734875}
   - component: {fileID: 979734874}
   m_Layer: 0
-  m_Name: BreadGrainChoice
+  m_Name: BreadWheatChoice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1059,7 +1147,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1123084098}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1057786067
 GameObject:
@@ -1072,7 +1160,7 @@ GameObject:
   - component: {fileID: 1057786069}
   - component: {fileID: 1057786068}
   m_Layer: 0
-  m_Name: MilkSouredChoice
+  m_Name: MilkWholeChoice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1323,8 +1411,8 @@ Transform:
   m_Children:
   - {fileID: 1239307924}
   - {fileID: 1227524518}
-  - {fileID: 390116341}
   - {fileID: 979734875}
+  - {fileID: 390116341}
   - {fileID: 260594260}
   m_Father: {fileID: 1976750295}
   m_RootOrder: 1
@@ -1389,6 +1477,42 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1714619273}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 957946347}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 106923907}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 129219651}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1493,16 +1617,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129219651}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   ChoicePrompt: {fileID: 4900000, guid: eaa0e1438c19c0c45a07b9c2aca06c0d, type: 3}
   Choices:
   - {fileID: 1195064978}
   - {fileID: 1195064977}
   - {fileID: 1195064976}
   NextNodes:
-  - {fileID: 514225613}
-  - {fileID: 1867203194}
   - {fileID: 2076600254}
+  - {fileID: 1867203194}
+  - {fileID: 514225613}
 --- !u!1 &1211704762
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,7 +1685,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 957946347}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   DialogueText: {fileID: 4900000, guid: 4c5c6144a77a1244c97b716426d43386, type: 3}
   NextNode: {fileID: 1237052534}
 --- !u!1 &1227524517
@@ -1643,15 +1791,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 106923907}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   ChoicePrompt: {fileID: 4900000, guid: 183bf9d15043bb04280d3086ee7b8627, type: 3}
   Choices:
   - {fileID: 1227524521}
   - {fileID: 1227524520}
   - {fileID: 1227524519}
   NextNodes:
-  - {fileID: 390116340}
   - {fileID: 979734874}
+  - {fileID: 390116340}
   - {fileID: 260594259}
 --- !u!1 &1237052532
 GameObject:
@@ -1834,6 +1994,7 @@ Transform:
   - {fileID: 1530751375}
   - {fileID: 1084520481}
   - {fileID: 978907237}
+  - {fileID: 45986135}
   - {fileID: 846877130}
   m_Father: {fileID: 1976750295}
   m_RootOrder: 0
@@ -1869,7 +2030,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129219651}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   DialogueText: {fileID: 4900000, guid: 963b0d2d88838d240bf41be5a5b38b27, type: 3}
   NextNode: {fileID: 130515671}
 --- !u!4 &1557580015
@@ -2140,7 +2313,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 900036719}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2076600254
 MonoBehaviour:

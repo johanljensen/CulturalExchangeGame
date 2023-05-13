@@ -207,6 +207,125 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &123237397 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6316945207687072496, guid: 2a39b90deb7ce744497ae8468f7b9331, type: 3}
+  m_PrefabInstance: {fileID: 2545819922122667815}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce45f10f6246094f9e343272b361d48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &129912982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 129912984}
+  - component: {fileID: 129912983}
+  m_Layer: 0
+  m_Name: EndNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &129912983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129912982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce7e847e0de144243ba719c70d56c7f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NodeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &129912984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129912982}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &149088633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 149088634}
+  - component: {fileID: 149088635}
+  m_Layer: 0
+  m_Name: LookForClassroomNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &149088634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149088633}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 607674648}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &149088635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149088633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 0:15
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 0f782a81450df9243ad71b38b3fa3f7e, type: 3}
+  NextNode: {fileID: 954632723}
 --- !u!1 &164090512
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,9 +372,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 1:03
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetTextIsDialogue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: f1ee42c4e95b381448025690c997fd8c, type: 3}
+  NextNode: {fileID: 1133134109}
 --- !u!1 &193998223
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,9 +445,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4:02
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 274b43ee019c5df4e88e23c5b77a689e, type: 3}
+  NextNode: {fileID: 432850923}
 --- !u!1 &234084989
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +490,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1796597435}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &234084991
 MonoBehaviour:
@@ -351,9 +506,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 1:21
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetOtherCharacterColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 3b20850836cd0ba45bcabcbfe5a0e465, type: 3}
+  NextNode: {fileID: 967369854}
 --- !u!1 &239607177
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,11 +581,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4:06
+          m_BoolArgument: 0
+        m_CallState: 2
   ChoicePrompt: {fileID: 4900000, guid: 7eb7c3b2601940345a4fb2e41aef8485, type: 3}
   Choices:
   - {fileID: 239607180}
-  NextNodes: []
+  - {fileID: 239607181}
+  NextNodes:
+  - {fileID: 193998225}
+  - {fileID: 294771156}
 --- !u!114 &239607180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,7 +613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2647777f7d4fb824897a4a4fb9f44315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoiceText: {fileID: 0}
+  ChoiceText: {fileID: 4900000, guid: 4baadd182e278ea408b2aa3fe3d04327, type: 3}
 --- !u!114 &239607181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,7 +626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2647777f7d4fb824897a4a4fb9f44315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoiceText: {fileID: 0}
+  ChoiceText: {fileID: 4900000, guid: 6efaa3978d46f4744a5315ee5a11b8c6, type: 3}
 --- !u!1 &271024916
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,9 +673,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 1:34
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetTextIsDialogue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 3cfc8246b4d77154480af83d867f9d11, type: 3}
+  NextNode: {fileID: 164090514}
 --- !u!1 &286339388
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,9 +746,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3:29
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetTextIsDialogue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 3d232ac7647120a458610c67ac749094, type: 3}
+  NextNode: {fileID: 907160863}
 --- !u!1 &294771154
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,58 +819,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
---- !u!1 &302954688
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 302954689}
-  - component: {fileID: 302954690}
-  m_Layer: 0
-  m_Name: StairSeekEndNode
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &302954689
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302954688}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1796597435}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &302954690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302954688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NodeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4:02
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 4733e70caa2fc4a4ca38b49e883ad3bb, type: 3}
+  NextNode: {fileID: 1868868712}
 --- !u!1 &328150004
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,9 +880,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3:11
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetTextIsDialogue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: e89d5a9e1db8f244fa500818635096a9, type: 3}
+  NextNode: {fileID: 634511972}
 --- !u!1 &361004441
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,9 +953,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 2:33
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: e98c552255648a34e921d8bbfea2708e, type: 3}
+  NextNode: {fileID: 700706968}
 --- !u!1 &423799865
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,9 +1014,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3:23
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetTextIsDialogue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 5e09eae4ab7abbe45a284fbf7d828b52, type: 3}
+  NextNode: {fileID: 673045376}
 --- !u!1 &430651889
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,7 +1071,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 660383795}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &430651891
 MonoBehaviour:
@@ -822,9 +1087,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 1:50
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: f4a0f218b43f80f45b3be53c2d719ba3, type: 3}
+  NextNode: {fileID: 129912983}
 --- !u!1 &432850921
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,9 +1148,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 2:11
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 2fa5d44845e13494dbb69e0b6063a949, type: 3}
+  NextNode: {fileID: 560292598}
 --- !u!1 &440166799
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,9 +1193,9 @@ Transform:
   m_Children:
   - {fileID: 827248813}
   - {fileID: 553732556}
-  - {fileID: 1437842219}
-  - {fileID: 1566710280}
   - {fileID: 1796597435}
+  - {fileID: 1566710280}
+  - {fileID: 1437842219}
   - {fileID: 660383795}
   - {fileID: 607674648}
   m_Father: {fileID: 0}
@@ -958,7 +1247,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4:45
+          m_BoolArgument: 0
+        m_CallState: 2
   DialogueText: {fileID: 4900000, guid: a4a706ed9c52faa428eca5cd4c667cbf, type: 3}
   NextNode: {fileID: 1772087670}
 --- !u!1 &539403258
@@ -991,7 +1292,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 607674648}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &539403260
 MonoBehaviour:
@@ -1007,9 +1308,70 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LATE
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 49854a57448a2b74eb397f8d2b3c8f20, type: 3}
+  NextNode: {fileID: 129912983}
+--- !u!1 &545836030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 545836031}
+  - component: {fileID: 545836032}
+  m_Layer: 0
+  m_Name: LookForClassroomNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &545836031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545836030}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1796597435}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &545836032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545836030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NodeEvent:
+    m_PersistentCalls:
       m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+  DialogueText: {fileID: 4900000, guid: 0f782a81450df9243ad71b38b3fa3f7e, type: 3}
+  NextNode: {fileID: 954632723}
 --- !u!1 &551604351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,9 +1514,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 1:47
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetTextIsDialogue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 643324220b2ca5349a3f8a0abdc2e90f, type: 3}
+  NextNode: {fileID: 1415632624}
 --- !u!1 &607674647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,13 +1573,14 @@ Transform:
   - {fileID: 1608898234}
   - {fileID: 423799866}
   - {fileID: 673045375}
+  - {fileID: 1682182695}
   - {fileID: 1689033817}
   - {fileID: 1654954161}
   - {fileID: 2005454025}
   - {fileID: 613223958}
   - {fileID: 1547388587}
+  - {fileID: 149088634}
   - {fileID: 539403259}
-  - {fileID: 1951723613}
   m_Father: {fileID: 440166800}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1227,7 +1614,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 607674648}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &613223959
 MonoBehaviour:
@@ -1243,9 +1630,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 0:57
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 5a432507cdae3694994139bc0e393416, type: 3}
+  NextNode: {fileID: 1547388588}
 --- !u!1 &634511970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,9 +1691,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3:05
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetOtherCharacterColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 5fa7f77d2dc8b0a43b282326413ae500, type: 3}
+  NextNode: {fileID: 1710566302}
 --- !u!1 &656006119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,7 +1749,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4:55
+          m_BoolArgument: 0
+        m_CallState: 2
   DialogueText: {fileID: 4900000, guid: bce67517b526b4047ab9fb31a6c75b70, type: 3}
   NextNode: {fileID: 1669185797}
 --- !u!4 &656006121
@@ -1379,8 +1814,8 @@ Transform:
   - {fileID: 1710566301}
   - {fileID: 1680159119}
   - {fileID: 361004442}
+  - {fileID: 700706967}
   - {fileID: 430651890}
-  - {fileID: 1596710722}
   m_Father: {fileID: 440166800}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1430,9 +1865,94 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3:18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetOtherCharacterColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 465ea8a3d9f55e14294694548312e0d5, type: 3}
+  NextNode: {fileID: 1682182696}
+--- !u!1 &700706966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 700706967}
+  - component: {fileID: 700706968}
+  m_Layer: 0
+  m_Name: LookForClassroomNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &700706967
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700706966}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 660383795}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &700706968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700706966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 2:14
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 0f782a81450df9243ad71b38b3fa3f7e, type: 3}
+  NextNode: {fileID: 430651891}
 --- !u!1 &827248812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,9 +2034,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3:59
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 76a49be146aec3344a43c58fdd77ff2d, type: 3}
+  NextNode: {fileID: 1592512844}
 --- !u!1 &828644212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,7 +2095,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4:21
+          m_BoolArgument: 0
+        m_CallState: 2
   DialogueText: {fileID: 4900000, guid: 58d53d21fd97127458b3d5cbba7cf798, type: 3}
   NextNode: {fileID: 1481319803}
 --- !u!1 &890390221
@@ -1596,7 +2140,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1796597435}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &890390223
 MonoBehaviour:
@@ -1612,9 +2156,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 0:36
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetTextIsDialogue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: c17d53839128768489cc282fcf36447e, type: 3}
+  NextNode: {fileID: 1388129508}
 --- !u!1 &907160861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,9 +2229,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3:26
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetOtherCharacterColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 19c56d11b5fcc4b4189224ac859abcfe, type: 3}
+  NextNode: {fileID: 1069438905}
 --- !u!1 &954632721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,7 +2286,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1796597435}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &954632723
 MonoBehaviour:
@@ -1711,8 +2303,8 @@ MonoBehaviour:
   NodeEvent:
     m_PersistentCalls:
       m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+  DialogueText: {fileID: 4900000, guid: b020deb5e3a17774693e2ccd0a74d184, type: 3}
+  NextNode: {fileID: 129912983}
 --- !u!1 &967369852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,7 +2335,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1796597435}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &967369854
 MonoBehaviour:
@@ -1759,9 +2351,106 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 1:07
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetTextIsDialogue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: f059081c26b10f04886b854ca6375438, type: 3}
+  NextNode: {fileID: 890390223}
+--- !u!1 &1069438903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1069438904}
+  - component: {fileID: 1069438905}
+  m_Layer: 0
+  m_Name: SupportWorkingNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1069438904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069438903}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1796597435}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1069438905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069438903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3:17
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetTextIsDialogue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 5beb6462fc98e8d4cbd2a4339d97ada4, type: 3}
+  NextNode: {fileID: 234084991}
 --- !u!1 &1133134107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1808,9 +2497,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 0:46
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: c246c0cc90f5ce04ba7a8f1a9542bb8d, type: 3}
+  NextNode: {fileID: 1430723362}
 --- !u!1 &1158013922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1859,12 +2560,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4:04
+          m_BoolArgument: 0
+        m_CallState: 2
   ChoicePrompt: {fileID: 4900000, guid: 1546121df57239a42a7fb266cbeea16e, type: 3}
   Choices:
   - {fileID: 1158013926}
   - {fileID: 1158013925}
-  NextNodes: []
+  NextNodes:
+  - {fileID: 827406339}
+  - {fileID: 1158029002}
 --- !u!114 &1158013925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1937,9 +2652,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3:59
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 47b7e029c26334249bbe49f80927b646, type: 3}
+  NextNode: {fileID: 1608898235}
 --- !u!1 &1186163086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,7 +2724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b315caf0347fe4995b20a6c7b275f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textBoxHandler: {fileID: 0}
+  textBoxHandler: {fileID: 2545819922122667821}
   firstDialogue: {fileID: 551604353}
 --- !u!4 &1186163090
 Transform:
@@ -2044,7 +2771,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1796597435}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1388129508
 MonoBehaviour:
@@ -2060,9 +2787,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 0:15
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 7418ef5ce4f70c6409a5876b58a4df42, type: 3}
+  NextNode: {fileID: 1390204532}
 --- !u!1 &1390204530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,7 +2832,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1796597435}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1390204532
 MonoBehaviour:
@@ -2109,9 +2848,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LATE
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 49871cdc90fa3064b8f7cc5ba659a8e2, type: 3}
+  NextNode: {fileID: 545836032}
 --- !u!1 &1415632622
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,9 +2909,94 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 1:38
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetOtherCharacterColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 4980e29a6ac88ea4596b0ddbe8cca261, type: 3}
+  NextNode: {fileID: 271024918}
+--- !u!1 &1430723360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1430723361}
+  - component: {fileID: 1430723362}
+  m_Layer: 0
+  m_Name: LookForClassroomNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1430723361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430723360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1566710280}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1430723362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430723360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 0:39
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 5185c181807f195419be686162cd1feb, type: 3}
+  NextNode: {fileID: 1527382937}
 --- !u!1 &1437842218
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,7 +3030,7 @@ Transform:
   - {fileID: 2145916198}
   - {fileID: 1158013923}
   m_Father: {fileID: 440166800}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1481319801
 GameObject:
@@ -2242,7 +3078,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4:15
+          m_BoolArgument: 0
+        m_CallState: 2
   DialogueText: {fileID: 4900000, guid: 6b7ec58133e379b41a41c25ec15640f4, type: 3}
   NextNode: {fileID: 239607179}
 --- !u!1 &1527382935
@@ -2275,7 +3123,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1566710280}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1527382937
 MonoBehaviour:
@@ -2291,9 +3139,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 0:18
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 68e1b52e1e4ba614fb39f8330f7cd69e, type: 3}
+  NextNode: {fileID: 129912983}
 --- !u!1 &1547388586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2324,7 +3184,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 607674648}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1547388588
 MonoBehaviour:
@@ -2340,9 +3200,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 0:42
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: e76f107ab1d84ad4b94529ba764247cc, type: 3}
+  NextNode: {fileID: 149088635}
 --- !u!1 &1566710279
 GameObject:
   m_ObjectHideFlags: 0
@@ -2378,8 +3250,8 @@ Transform:
   - {fileID: 271024917}
   - {fileID: 164090513}
   - {fileID: 1133134108}
+  - {fileID: 1430723361}
   - {fileID: 1527382936}
-  - {fileID: 2086122438}
   m_Father: {fileID: 440166800}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2429,58 +3301,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
---- !u!1 &1596710721
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1596710722}
-  - component: {fileID: 1596710723}
-  m_Layer: 0
-  m_Name: ElevatorWaitEndNode
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1596710722
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596710721}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 660383795}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1596710723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596710721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NodeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3:16
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 4c48c3f6710aa9b4dbda56a6da66a2cc, type: 3}
+  NextNode: {fileID: 328150006}
 --- !u!1 &1608898233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2527,9 +3362,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3:27
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: a3f9325e5eb98be41a34979022cfe4f6, type: 3}
+  NextNode: {fileID: 423799867}
 --- !u!1 &1654954160
 GameObject:
   m_ObjectHideFlags: 0
@@ -2560,7 +3407,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 607674648}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1654954162
 MonoBehaviour:
@@ -2576,9 +3423,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 1:52
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetTextIsDialogue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 2502ea68af5dbd14596ffcfd96107f70, type: 3}
+  NextNode: {fileID: 2005454026}
 --- !u!1 &1669185796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2612,7 +3483,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4:53
+          m_BoolArgument: 0
+        m_CallState: 2
   ChoicePrompt: {fileID: 4900000, guid: 16659d8b3e17b5e4c8571875cb4459eb, type: 3}
   Choices:
   - {fileID: 1669185799}
@@ -2707,9 +3590,106 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 2:47
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetTextIsDialogue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: ec67837937b149149a34de65f4e95253, type: 3}
+  NextNode: {fileID: 361004443}
+--- !u!1 &1682182694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1682182695}
+  - component: {fileID: 1682182696}
+  m_Layer: 0
+  m_Name: SupportWorkingNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1682182695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682182694}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 607674648}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1682182696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682182694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3:18
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetTextIsDialogue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 208768c225bf1d24096cc70546d8fd84, type: 3}
+  NextNode: {fileID: 1689033818}
 --- !u!1 &1689033816
 GameObject:
   m_ObjectHideFlags: 0
@@ -2740,7 +3720,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 607674648}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1689033818
 MonoBehaviour:
@@ -2756,9 +3736,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 1:57
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetOtherCharacterColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 6e0c0f582f7e3c9488146e0d7b7a3003, type: 3}
+  NextNode: {fileID: 1654954162}
 --- !u!1 &1710566300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2805,9 +3809,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 2:59
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetTextIsDialogue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: dc1e39cedb8f2424395cfd6858e8cfe0, type: 3}
+  NextNode: {fileID: 1680159120}
 --- !u!1 &1772087668
 GameObject:
   m_ObjectHideFlags: 0
@@ -2854,7 +3882,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4:18
+          m_BoolArgument: 0
+        m_CallState: 2
   DialogueText: {fileID: 4900000, guid: e75e5699d8273794291fea0487dead32, type: 3}
   NextNode: {fileID: 2145916199}
 --- !u!1 &1772340542
@@ -2903,7 +3943,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4:45
+          m_BoolArgument: 0
+        m_CallState: 2
   DialogueText: {fileID: 4900000, guid: bab15fe6d9b7f204ab34f48f397bb5ae, type: 3}
   NextNode: {fileID: 828644214}
 --- !u!1 &1793478433
@@ -2937,7 +3989,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4:57
+          m_BoolArgument: 0
+        m_CallState: 2
   DialogueText: {fileID: 4900000, guid: 893e9bb10e66d1040b61e7ca3cabe703, type: 3}
   NextNode: {fileID: 656006120}
 --- !u!4 &1793478435
@@ -2987,15 +4051,16 @@ Transform:
   - {fileID: 1868868711}
   - {fileID: 286339389}
   - {fileID: 907160862}
+  - {fileID: 1069438904}
   - {fileID: 234084990}
   - {fileID: 967369853}
   - {fileID: 890390222}
   - {fileID: 1388129507}
   - {fileID: 1390204531}
+  - {fileID: 545836031}
   - {fileID: 954632722}
-  - {fileID: 302954689}
   m_Father: {fileID: 440166800}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1834434434
 GameObject:
@@ -3111,58 +4176,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
---- !u!1 &1951723612
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1951723613}
-  - component: {fileID: 1951723614}
-  m_Layer: 0
-  m_Name: ElevatorSeekEndNode
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1951723613
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951723612}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 607674648}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1951723614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951723612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NodeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3:34
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: def16e4c7d9ee8841b383cf85fc4ba35, type: 3}
+  NextNode: {fileID: 286339390}
 --- !u!1 &2005454024
 GameObject:
   m_ObjectHideFlags: 0
@@ -3193,7 +4221,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 607674648}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2005454026
 MonoBehaviour:
@@ -3209,58 +4237,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
---- !u!1 &2086122437
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2086122438}
-  - component: {fileID: 2086122439}
-  m_Layer: 0
-  m_Name: StairWaitEndNode
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2086122438
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086122437}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1566710280}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2086122439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086122437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NodeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  DialogueText: {fileID: 0}
-  NextNode: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 1:20
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123237397}
+        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
+        m_MethodName: SetTextIsDialogue
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  DialogueText: {fileID: 4900000, guid: 3d90dd352899be241b93675ac0232c7d, type: 3}
+  NextNode: {fileID: 613223959}
 --- !u!1 &2145916197
 GameObject:
   m_ObjectHideFlags: 0
@@ -3307,7 +4310,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NodeEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2545819922122667816}
+        m_TargetAssemblyTypeName: TextTimer, Assembly-CSharp
+        m_MethodName: SetTimerText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4:13
+          m_BoolArgument: 0
+        m_CallState: 2
   DialogueText: {fileID: 4900000, guid: 974bc25a6af33474bb60947774978709, type: 3}
   NextNode: {fileID: 1158013924}
 --- !u!1001 &2545819922122667815
@@ -3440,3 +4455,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherCharacterTextColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &2545819922122667821 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8968546966752852235, guid: 2a39b90deb7ce744497ae8468f7b9331, type: 3}
+  m_PrefabInstance: {fileID: 2545819922122667815}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2545819922122667817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88765bbeba13d8e4a85b551dd01fed63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
