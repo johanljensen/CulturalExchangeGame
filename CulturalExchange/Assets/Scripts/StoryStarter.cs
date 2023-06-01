@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NarrativeInitiator : MonoBehaviour
+public class StoryStarter : MonoBehaviour
 {
     [SerializeField]
-    TextBoxHandler textBoxHandler;
+    TextManager textBoxHandler;
 
     [SerializeField]
-    DialogueNodeSingle firstDialogue;
+    NarrativeText firstDialogue;
 
     void Awake()
     {
         Cursor.lockState = CursorLockMode.None;
-        firstDialogue.OpenNode(textBoxHandler);
+        firstDialogue.AdvanceNarrative(textBoxHandler);
     }
 }

@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NarrativeEvents : MonoBehaviour
+public class StoryEvents : MonoBehaviour
 {
     [SerializeField]
-    NarrativeStates States;
+    StoryStates States;
 
     private void Start()
     {
         if (States == null)
         {
-            States = FindObjectOfType<NarrativeStates>();
+            States = FindObjectOfType<StoryStates>();
         }
     }
 

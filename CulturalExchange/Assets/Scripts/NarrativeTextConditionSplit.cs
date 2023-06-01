@@ -3,31 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DialogueNodeSplitCondition : DialogueNode
+public class NarrativeTextConditionSplit : NarrativeBase
 {
     [SerializeField]
     TextAsset DialogueText;
 
     [SerializeField]
-    List<DialogueNode> NextNodes;
+    List<NarrativeBase> NextNodes;
 
     [SerializeField]
-    List<NarrativeStates.StoryStates> Conditions;
+    List<StoryStates.StoryState> Conditions;
 
-    public override void OpenNode(TextBoxHandler textHandler)
+    public override void AdvanceNarrative(TextManager textHandler)
     {
         Debug.Log("Opening split item node");
-        RunNodeEvent();
-        textHandler.SetSimpleDialogue(this);
+        RunNarrativeEvent();
+        textHandler.SetNarration(this);
     }
     public override string GetText()
     {
         return DialogueText.text;
     }
 
-    public override DialogueNode GetNextNode()
+    public override NarrativeBase GetNextNarrative()
     {
-        NarrativeStates states = FindObjectOfType<NarrativeStates>();
+        StoryStates states = FindObjectOfType<StoryStates>();
         if (states != null)
         {
             for (int x = 0; x < NextNodes.Count; x++)

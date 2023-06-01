@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 45223222}
   - component: {fileID: 45223221}
   m_Layer: 0
-  m_Name: TopicChoiceNode
+  m_Name: TopicDecisionNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2647777f7d4fb824897a4a4fb9f44315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoiceText: {fileID: 4900000, guid: 16dd2c3e7ee789f4d94093a963de1537, type: 3}
+  decisionTextFile: {fileID: 4900000, guid: 921744b69f474184690368435af4de30, type: 3}
 --- !u!114 &45223222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2647777f7d4fb824897a4a4fb9f44315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoiceText: {fileID: 4900000, guid: 9126bc7d1696e8f41a10ada269d41506, type: 3}
+  decisionTextFile: {fileID: 4900000, guid: 23709cfc552c3ad42ac0d021fdfc0eed, type: 3}
 --- !u!114 &45223223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2647777f7d4fb824897a4a4fb9f44315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoiceText: {fileID: 4900000, guid: 7c4287d1a5f6a6148a976ac3c5947f96, type: 3}
+  decisionTextFile: {fileID: 4900000, guid: e6877988be90fcf4783dae8e6f27875f, type: 3}
 --- !u!114 &45223224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610e2e6b1de02f747aac17843f635c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls: []
   ChoicePrompt: {fileID: 4900000, guid: 6c0b1b6ded5620441887ab240c8c0a5e, type: 3}
@@ -265,23 +265,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4993332436355886791}
-        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
-        m_MethodName: SetOtherCharacterColor
+      - m_Target: {fileID: 4993332436355886786}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: a380eedc7d7c77a49b43cdcce19b5218, type: 3}
-  NextNode: {fileID: 1104402881}
+  narrativeText: {fileID: 4900000, guid: a380eedc7d7c77a49b43cdcce19b5218, type: 3}
+  NextNarrative: {fileID: 1104402881}
 --- !u!1 &73876600
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -425,8 +425,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 0e1b867ebb4d6b248b7d7a068c447ff4, type: 3}
-  NextNode: {fileID: 1187221793}
+  narrativeText: {fileID: 4900000, guid: 0e1b867ebb4d6b248b7d7a068c447ff4, type: 3}
+  NextNarrative: {fileID: 1187221793}
 --- !u!1 &127368383
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -486,8 +486,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 4e20ffcc13d0c924688f56be3dd709ec, type: 3}
-  NextNode: {fileID: 49004914}
+  narrativeText: {fileID: 4900000, guid: 4e20ffcc13d0c924688f56be3dd709ec, type: 3}
+  NextNarrative: {fileID: 49004914}
 --- !u!1 &139168513
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2076808371}
@@ -571,8 +571,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 92f2822b874d10b4f94270a4a94e3a60, type: 3}
-  NextNode: {fileID: 1104327256}
+  narrativeText: {fileID: 4900000, guid: 92f2822b874d10b4f94270a4a94e3a60, type: 3}
+  NextNarrative: {fileID: 1104327256}
 --- !u!1 &215866322
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -632,8 +632,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 47ec666fabc31f64fb8ab7782eafc84c, type: 3}
-  NextNode: {fileID: 2119746035}
+  narrativeText: {fileID: 4900000, guid: 47ec666fabc31f64fb8ab7782eafc84c, type: 3}
+  NextNarrative: {fileID: 2119746035}
 --- !u!1 &232296732
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,7 +801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1170817336}
@@ -828,8 +828,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 3348657a4df3f8747a298f7d32e69f7e, type: 3}
-  NextNode: {fileID: 977240301}
+  narrativeText: {fileID: 4900000, guid: 3348657a4df3f8747a298f7d32e69f7e, type: 3}
+  NextNarrative: {fileID: 977240301}
 --- !u!4 &433548126
 Transform:
   m_ObjectHideFlags: 0
@@ -889,7 +889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -904,8 +904,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 6182040402f6e5b4097ebf5099839dd1, type: 3}
-  NextNode: {fileID: 1244846562}
+  narrativeText: {fileID: 4900000, guid: 6182040402f6e5b4097ebf5099839dd1, type: 3}
+  NextNarrative: {fileID: 1244846562}
 --- !u!1 &551739791
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,7 +950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -965,8 +965,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 7b5033fa9f4ed5f4fbdf69c783e5b6fc, type: 3}
-  NextNode: {fileID: 1468025841}
+  narrativeText: {fileID: 4900000, guid: 7b5033fa9f4ed5f4fbdf69c783e5b6fc, type: 3}
+  NextNarrative: {fileID: 1468025841}
 --- !u!1 &551800746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,7 +1011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce7e847e0de144243ba719c70d56c7f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &594522859
@@ -1058,7 +1058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1170817336}
@@ -1073,8 +1073,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 9be49a932f700f34199836e69adc4997, type: 3}
-  NextNode: {fileID: 1378313233}
+  narrativeText: {fileID: 4900000, guid: 9be49a932f700f34199836e69adc4997, type: 3}
+  NextNarrative: {fileID: 1378313233}
 --- !u!1 &605275038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,7 +1119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -1134,8 +1134,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 76cdeb20e7c3ae643b907c8d521286ba, type: 3}
-  NextNode: {fileID: 1351554692}
+  narrativeText: {fileID: 4900000, guid: 76cdeb20e7c3ae643b907c8d521286ba, type: 3}
+  NextNarrative: {fileID: 1351554692}
 --- !u!1 &606126678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,7 +1165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -1180,8 +1180,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 8f087eea21b4a6c44b32260bd3238cdb, type: 3}
-  NextNode: {fileID: 1187878783}
+  narrativeText: {fileID: 4900000, guid: 8f087eea21b4a6c44b32260bd3238cdb, type: 3}
+  NextNarrative: {fileID: 1187878783}
 --- !u!4 &606126680
 Transform:
   m_ObjectHideFlags: 0
@@ -1241,7 +1241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -1256,8 +1256,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 1127076c06088af4d8835a3bebff95b0, type: 3}
-  NextNode: {fileID: 1468025841}
+  narrativeText: {fileID: 4900000, guid: 1127076c06088af4d8835a3bebff95b0, type: 3}
+  NextNarrative: {fileID: 1468025841}
 --- !u!114 &619555872 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4163851535419670165, guid: f45114fa97e16674ba5e364667d42ff1, type: 3}
@@ -1313,7 +1313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -1328,8 +1328,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 576cd943a048feb44b4804e6679d9a70, type: 3}
-  NextNode: {fileID: 1843249244}
+  narrativeText: {fileID: 4900000, guid: 576cd943a048feb44b4804e6679d9a70, type: 3}
+  NextNarrative: {fileID: 1843249244}
 --- !u!1 &742353223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,7 +1341,7 @@ GameObject:
   - component: {fileID: 742353225}
   - component: {fileID: 742353224}
   m_Layer: 0
-  m_Name: FoodChoice
+  m_Name: FoodDecision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1359,7 +1359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -1374,8 +1374,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 91761586607e4394ca55ff47539b56dc, type: 3}
-  NextNode: {fileID: 1111323503}
+  narrativeText: {fileID: 4900000, guid: 91761586607e4394ca55ff47539b56dc, type: 3}
+  NextNarrative: {fileID: 1111323503}
 --- !u!4 &742353225
 Transform:
   m_ObjectHideFlags: 0
@@ -1435,11 +1435,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls: []
-  DialogueText: {fileID: 4900000, guid: 1bf7a3312fd9b3943b6688831a352c88, type: 3}
-  NextNode: {fileID: 551800748}
+  narrativeText: {fileID: 4900000, guid: 1bf7a3312fd9b3943b6688831a352c88, type: 3}
+  NextNarrative: {fileID: 551800748}
 --- !u!1 &772297648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,7 +1484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -1499,8 +1499,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 295181a15042fc241aa1cb9263db0f7f, type: 3}
-  NextNode: {fileID: 1515971656}
+  narrativeText: {fileID: 4900000, guid: 295181a15042fc241aa1cb9263db0f7f, type: 3}
+  NextNarrative: {fileID: 1515971656}
 --- !u!1 &773733599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,7 +1545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -1560,8 +1560,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 58925b1257d84b6469d2f6c4a6aa5842, type: 3}
-  NextNode: {fileID: 1825216448}
+  narrativeText: {fileID: 4900000, guid: 58925b1257d84b6469d2f6c4a6aa5842, type: 3}
+  NextNarrative: {fileID: 1825216448}
 --- !u!1 &804749877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,7 +1625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -1638,10 +1638,10 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 8cfc67d141d6a094892c037ae3abd6f3, type: 3}
-  NextNode: {fileID: 1438375188}
+  narrativeText: {fileID: 4900000, guid: 8cfc67d141d6a094892c037ae3abd6f3, type: 3}
+  NextNarrative: {fileID: 1438375188}
 --- !u!4 &828870808
 Transform:
   m_ObjectHideFlags: 0
@@ -1726,7 +1726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -1741,8 +1741,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 002d2ba61df4af449a6189c011f7129e, type: 3}
-  NextNode: {fileID: 828870807}
+  narrativeText: {fileID: 4900000, guid: 002d2ba61df4af449a6189c011f7129e, type: 3}
+  NextNarrative: {fileID: 828870807}
 --- !u!4 &977240302
 Transform:
   m_ObjectHideFlags: 0
@@ -1771,7 +1771,7 @@ GameObject:
   - component: {fileID: 990383583}
   - component: {fileID: 990383582}
   m_Layer: 0
-  m_Name: DrinksChoiceNode
+  m_Name: DrinksDecisionNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1804,7 +1804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2647777f7d4fb824897a4a4fb9f44315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoiceText: {fileID: 4900000, guid: dc1bd15d498929e4fb6b85669290ed43, type: 3}
+  decisionTextFile: {fileID: 4900000, guid: dc1bd15d498929e4fb6b85669290ed43, type: 3}
 --- !u!114 &990383583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1817,7 +1817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2647777f7d4fb824897a4a4fb9f44315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoiceText: {fileID: 4900000, guid: 94a9592e36c3c3d4991411de21399574, type: 3}
+  decisionTextFile: {fileID: 4900000, guid: 94a9592e36c3c3d4991411de21399574, type: 3}
 --- !u!114 &990383584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1830,7 +1830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610e2e6b1de02f747aac17843f635c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -1863,7 +1863,7 @@ GameObject:
   - component: {fileID: 1020253587}
   - component: {fileID: 1020253586}
   m_Layer: 0
-  m_Name: HomeChoice
+  m_Name: HomeDecision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1881,7 +1881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -1896,8 +1896,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: ab629db4d3941364d85ce1171dc4688c, type: 3}
-  NextNode: {fileID: 2060612241}
+  narrativeText: {fileID: 4900000, guid: ab629db4d3941364d85ce1171dc4688c, type: 3}
+  NextNarrative: {fileID: 2060612241}
 --- !u!4 &1020253587
 Transform:
   m_ObjectHideFlags: 0
@@ -1924,7 +1924,7 @@ GameObject:
   - component: {fileID: 1028910146}
   - component: {fileID: 1028910147}
   m_Layer: 0
-  m_Name: ChoiceInternational
+  m_Name: DecisionInternational
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1957,7 +1957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2647777f7d4fb824897a4a4fb9f44315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoiceText: {fileID: 4900000, guid: 8801ad74c3f1d304394ccb6644e525d2, type: 3}
+  decisionTextFile: {fileID: 4900000, guid: 8801ad74c3f1d304394ccb6644e525d2, type: 3}
 --- !u!1 &1048743530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2004,7 +2004,7 @@ GameObject:
   - component: {fileID: 1056359068}
   - component: {fileID: 1056359067}
   m_Layer: 0
-  m_Name: WeatherChoice
+  m_Name: WeatherDecision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2022,7 +2022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -2037,8 +2037,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 0b81297ae92da7e45a85581ad0c5f486, type: 3}
-  NextNode: {fileID: 696081644}
+  narrativeText: {fileID: 4900000, guid: 0b81297ae92da7e45a85581ad0c5f486, type: 3}
+  NextNarrative: {fileID: 696081644}
 --- !u!4 &1056359068
 Transform:
   m_ObjectHideFlags: 0
@@ -2065,7 +2065,7 @@ GameObject:
   - component: {fileID: 1059316040}
   - component: {fileID: 1059316041}
   m_Layer: 0
-  m_Name: GamesChoiceYes
+  m_Name: GamesDecisionYes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2098,7 +2098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -2113,8 +2113,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: f4f233a6234325b45842d4c0c9918ee7, type: 3}
-  NextNode: {fileID: 1959620636}
+  narrativeText: {fileID: 4900000, guid: f4f233a6234325b45842d4c0c9918ee7, type: 3}
+  NextNarrative: {fileID: 1959620636}
 --- !u!1 &1103476539
 GameObject:
   m_ObjectHideFlags: 0
@@ -2144,7 +2144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -2159,8 +2159,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 6cf8b36d32b17974ca1ed91052f7bcd5, type: 3}
-  NextNode: {fileID: 536220569}
+  narrativeText: {fileID: 4900000, guid: 6cf8b36d32b17974ca1ed91052f7bcd5, type: 3}
+  NextNarrative: {fileID: 536220569}
 --- !u!4 &1103476541
 Transform:
   m_ObjectHideFlags: 0
@@ -2220,11 +2220,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls: []
-  DialogueText: {fileID: 4900000, guid: 004a0764636d31a479c4af16b01adb20, type: 3}
-  NextNode: {fileID: 594522861}
+  narrativeText: {fileID: 4900000, guid: 004a0764636d31a479c4af16b01adb20, type: 3}
+  NextNarrative: {fileID: 594522861}
 --- !u!1 &1104402879
 GameObject:
   m_ObjectHideFlags: 0
@@ -2269,23 +2269,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4993332436355886791}
-        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
-        m_MethodName: SetTextIsDialogue
-        m_Mode: 6
+      - m_Target: {fileID: 4993332436355886786}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 8dd8345a799ffe440bd57cf3d47fb7a8, type: 3}
-  NextNode: {fileID: 772297650}
+  narrativeText: {fileID: 4900000, guid: 8dd8345a799ffe440bd57cf3d47fb7a8, type: 3}
+  NextNarrative: {fileID: 772297650}
 --- !u!1 &1111323501
 GameObject:
   m_ObjectHideFlags: 0
@@ -2330,7 +2330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -2345,8 +2345,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 072b9e4a768d6b94cbfaea11c556064a, type: 3}
-  NextNode: {fileID: 1843249244}
+  narrativeText: {fileID: 4900000, guid: 072b9e4a768d6b94cbfaea11c556064a, type: 3}
+  NextNarrative: {fileID: 1843249244}
 --- !u!1 &1153330578
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,7 +2358,7 @@ GameObject:
   - component: {fileID: 1153330579}
   - component: {fileID: 1153330580}
   m_Layer: 0
-  m_Name: GamesChoiceNo
+  m_Name: GamesDecisionNo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2391,7 +2391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -2406,8 +2406,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 10918fb246a100a49937dcbb1d14d6b2, type: 3}
-  NextNode: {fileID: 1155207575}
+  narrativeText: {fileID: 4900000, guid: 10918fb246a100a49937dcbb1d14d6b2, type: 3}
+  NextNarrative: {fileID: 1155207575}
 --- !u!1 &1155207573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2452,7 +2452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -2467,8 +2467,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 81ded953f1970d94390c910d6e62aa59, type: 3}
-  NextNode: {fileID: 990383584}
+  narrativeText: {fileID: 4900000, guid: 81ded953f1970d94390c910d6e62aa59, type: 3}
+  NextNarrative: {fileID: 990383584}
 --- !u!1 &1170817336 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8084210226776065917, guid: f45114fa97e16674ba5e364667d42ff1, type: 3}
@@ -2518,11 +2518,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls: []
-  DialogueText: {fileID: 4900000, guid: 0d6478be01ab0424987e39a5f9246d36, type: 3}
-  NextNode: {fileID: 2088154476}
+  narrativeText: {fileID: 4900000, guid: 0d6478be01ab0424987e39a5f9246d36, type: 3}
+  NextNarrative: {fileID: 2088154476}
 --- !u!1 &1187878782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,7 +2552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -2567,8 +2567,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 81faa7df0f0392242973e718ddd800f8, type: 3}
-  NextNode: {fileID: 1103476540}
+  narrativeText: {fileID: 4900000, guid: 81faa7df0f0392242973e718ddd800f8, type: 3}
+  NextNarrative: {fileID: 1103476540}
 --- !u!4 &1187878784
 Transform:
   m_ObjectHideFlags: 0
@@ -2628,7 +2628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -2643,8 +2643,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: fa48f166dad6763468bad58664ac4547, type: 3}
-  NextNode: {fileID: 1484102445}
+  narrativeText: {fileID: 4900000, guid: fa48f166dad6763468bad58664ac4547, type: 3}
+  NextNarrative: {fileID: 1484102445}
 --- !u!1 &1244846560
 GameObject:
   m_ObjectHideFlags: 0
@@ -2689,11 +2689,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls: []
-  DialogueText: {fileID: 4900000, guid: a5ff2dd2b726cb346a116e565834e46a, type: 3}
-  NextNode: {fileID: 1542872823}
+  narrativeText: {fileID: 4900000, guid: a5ff2dd2b726cb346a116e565834e46a, type: 3}
+  NextNarrative: {fileID: 1542872823}
 --- !u!1 &1261842138
 GameObject:
   m_ObjectHideFlags: 0
@@ -2738,7 +2738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -2753,8 +2753,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 8980d2f254399b748a6a9a9afc77efe8, type: 3}
-  NextNode: {fileID: 1347135087}
+  narrativeText: {fileID: 4900000, guid: 8980d2f254399b748a6a9a9afc77efe8, type: 3}
+  NextNarrative: {fileID: 1347135087}
 --- !u!1 &1347135085
 GameObject:
   m_ObjectHideFlags: 0
@@ -2799,7 +2799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -2814,8 +2814,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 02917d7e7c1e372499b3d46804f5717a, type: 3}
-  NextNode: {fileID: 605275040}
+  narrativeText: {fileID: 4900000, guid: 02917d7e7c1e372499b3d46804f5717a, type: 3}
+  NextNarrative: {fileID: 605275040}
 --- !u!1 &1351554690
 GameObject:
   m_ObjectHideFlags: 0
@@ -2860,7 +2860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -2875,8 +2875,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: c66cfae43697a8340a5a0c7b85c794bd, type: 3}
-  NextNode: {fileID: 45223224}
+  narrativeText: {fileID: 4900000, guid: c66cfae43697a8340a5a0c7b85c794bd, type: 3}
+  NextNarrative: {fileID: 45223224}
 --- !u!1 &1378313229
 GameObject:
   m_ObjectHideFlags: 0
@@ -2888,7 +2888,7 @@ GameObject:
   - component: {fileID: 1378313230}
   - component: {fileID: 1378313233}
   m_Layer: 0
-  m_Name: GroupChoiceNode
+  m_Name: GroupDecisionNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2923,7 +2923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610e2e6b1de02f747aac17843f635c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls: []
   ChoicePrompt: {fileID: 4900000, guid: 0f39544073720b44a8edaeb165cc18ff, type: 3}
@@ -2977,11 +2977,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls: []
-  DialogueText: {fileID: 4900000, guid: 92bbe637607d64948a5295bd58adc444, type: 3}
-  NextNode: {fileID: 1916842965}
+  narrativeText: {fileID: 4900000, guid: 92bbe637607d64948a5295bd58adc444, type: 3}
+  NextNarrative: {fileID: 1916842965}
 --- !u!1 &1438375187
 GameObject:
   m_ObjectHideFlags: 0
@@ -3011,7 +3011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -3026,8 +3026,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 0ea95e43b9e3f1d4abc57f77d16100e1, type: 3}
-  NextNode: {fileID: 606126679}
+  narrativeText: {fileID: 4900000, guid: 0ea95e43b9e3f1d4abc57f77d16100e1, type: 3}
+  NextNarrative: {fileID: 606126679}
 --- !u!4 &1438375189
 Transform:
   m_ObjectHideFlags: 0
@@ -3054,7 +3054,7 @@ GameObject:
   - component: {fileID: 1463352086}
   - component: {fileID: 1463352085}
   m_Layer: 0
-  m_Name: WeatherChoice
+  m_Name: WeatherDecision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3072,7 +3072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -3087,8 +3087,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: e6877988be90fcf4783dae8e6f27875f, type: 3}
-  NextNode: {fileID: 1739494905}
+  narrativeText: {fileID: 4900000, guid: e6877988be90fcf4783dae8e6f27875f, type: 3}
+  NextNarrative: {fileID: 1739494905}
 --- !u!4 &1463352086
 Transform:
   m_ObjectHideFlags: 0
@@ -3148,7 +3148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -3163,8 +3163,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: d476eae422979fa46a6126f4c1fdfcc1, type: 3}
-  NextNode: {fileID: 551800748}
+  narrativeText: {fileID: 4900000, guid: d476eae422979fa46a6126f4c1fdfcc1, type: 3}
+  NextNarrative: {fileID: 551800748}
 --- !u!1 &1484102441
 GameObject:
   m_ObjectHideFlags: 0
@@ -3178,7 +3178,7 @@ GameObject:
   - component: {fileID: 1484102444}
   - component: {fileID: 1484102443}
   m_Layer: 0
-  m_Name: GamesChoiceNode
+  m_Name: GamesDecisionNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3211,7 +3211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2647777f7d4fb824897a4a4fb9f44315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoiceText: {fileID: 4900000, guid: 582d04f50f6ddd9439786a664e3e60b6, type: 3}
+  decisionTextFile: {fileID: 4900000, guid: 582d04f50f6ddd9439786a664e3e60b6, type: 3}
 --- !u!114 &1484102444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3224,7 +3224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2647777f7d4fb824897a4a4fb9f44315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoiceText: {fileID: 4900000, guid: 8b33dd26fdb01d84087cc881771d6848, type: 3}
+  decisionTextFile: {fileID: 4900000, guid: 8b33dd26fdb01d84087cc881771d6848, type: 3}
 --- !u!114 &1484102445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3237,7 +3237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610e2e6b1de02f747aac17843f635c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -3303,7 +3303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -3318,8 +3318,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: a67038e3807b50e47b8f7c7d1897a1ee, type: 3}
-  NextNode: {fileID: 1261842140}
+  narrativeText: {fileID: 4900000, guid: a67038e3807b50e47b8f7c7d1897a1ee, type: 3}
+  NextNarrative: {fileID: 1261842140}
 --- !u!1 &1495304982
 GameObject:
   m_ObjectHideFlags: 0
@@ -3331,7 +3331,7 @@ GameObject:
   - component: {fileID: 1495304984}
   - component: {fileID: 1495304983}
   m_Layer: 0
-  m_Name: SportsChoice
+  m_Name: SportsDecision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3349,7 +3349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -3364,8 +3364,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 921744b69f474184690368435af4de30, type: 3}
-  NextNode: {fileID: 1574199057}
+  narrativeText: {fileID: 4900000, guid: 921744b69f474184690368435af4de30, type: 3}
+  NextNarrative: {fileID: 1574199057}
 --- !u!4 &1495304984
 Transform:
   m_ObjectHideFlags: 0
@@ -3392,7 +3392,7 @@ GameObject:
   - component: {fileID: 1510777450}
   - component: {fileID: 1510777451}
   m_Layer: 0
-  m_Name: ChoiceLocal
+  m_Name: DecisionLocal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3425,7 +3425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2647777f7d4fb824897a4a4fb9f44315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoiceText: {fileID: 4900000, guid: 750bde74ed4775d409987911e2a9fc00, type: 3}
+  decisionTextFile: {fileID: 4900000, guid: 750bde74ed4775d409987911e2a9fc00, type: 3}
 --- !u!1 &1515971654
 GameObject:
   m_ObjectHideFlags: 0
@@ -3470,23 +3470,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4993332436355886791}
-        m_TargetAssemblyTypeName: TextStyling, Assembly-CSharp
-        m_MethodName: SetTextIsDialogue
-        m_Mode: 6
+      - m_Target: {fileID: 4993332436355886786}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 5ab3e6f3c02dbe6488e742992eee6b71, type: 3}
-  NextNode: {fileID: 2066156432}
+  narrativeText: {fileID: 4900000, guid: 5ab3e6f3c02dbe6488e742992eee6b71, type: 3}
+  NextNarrative: {fileID: 2066156432}
 --- !u!1 &1516564465
 GameObject:
   m_ObjectHideFlags: 0
@@ -3575,7 +3575,7 @@ GameObject:
   - component: {fileID: 1542872821}
   - component: {fileID: 1542872820}
   m_Layer: 0
-  m_Name: TopicChoiceNode
+  m_Name: TopicDecisionNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3608,7 +3608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2647777f7d4fb824897a4a4fb9f44315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoiceText: {fileID: 4900000, guid: 30d2896d7bc64784a95dc87424d817c8, type: 3}
+  decisionTextFile: {fileID: 4900000, guid: 30d2896d7bc64784a95dc87424d817c8, type: 3}
 --- !u!114 &1542872821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3621,7 +3621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2647777f7d4fb824897a4a4fb9f44315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoiceText: {fileID: 4900000, guid: 6fd314683038fbe4287a2cf33bde06d1, type: 3}
+  decisionTextFile: {fileID: 4900000, guid: 6fd314683038fbe4287a2cf33bde06d1, type: 3}
 --- !u!114 &1542872822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3634,7 +3634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2647777f7d4fb824897a4a4fb9f44315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChoiceText: {fileID: 4900000, guid: c8dbdc93d115aa04ea744e1df379eeab, type: 3}
+  decisionTextFile: {fileID: 4900000, guid: c8dbdc93d115aa04ea744e1df379eeab, type: 3}
 --- !u!114 &1542872823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3647,7 +3647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610e2e6b1de02f747aac17843f635c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls: []
   ChoicePrompt: {fileID: 4900000, guid: 25c246caf993a0a45b010ad2d90818dd, type: 3}
@@ -3703,7 +3703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -3718,8 +3718,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 02e0dfcea7026f1479ccfaf7e869c192, type: 3}
-  NextNode: {fileID: 127368385}
+  narrativeText: {fileID: 4900000, guid: 02e0dfcea7026f1479ccfaf7e869c192, type: 3}
+  NextNarrative: {fileID: 127368385}
 --- !u!1 &1603755604
 GameObject:
   m_ObjectHideFlags: 0
@@ -3749,7 +3749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1170817336}
@@ -3776,8 +3776,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 15d762439de8c0e49be748855d457cf4, type: 3}
-  NextNode: {fileID: 215866324}
+  narrativeText: {fileID: 4900000, guid: 15d762439de8c0e49be748855d457cf4, type: 3}
+  NextNarrative: {fileID: 215866324}
 --- !u!4 &1603755606
 Transform:
   m_ObjectHideFlags: 0
@@ -3837,7 +3837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -3852,8 +3852,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 19a36012a57e738499b2222722b01337, type: 3}
-  NextNode: {fileID: 1385336660}
+  narrativeText: {fileID: 4900000, guid: 19a36012a57e738499b2222722b01337, type: 3}
+  NextNarrative: {fileID: 1385336660}
 --- !u!1 &1749457176
 GameObject:
   m_ObjectHideFlags: 0
@@ -3898,7 +3898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -3913,8 +3913,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 87ccbf507d76e564a9ca40c1c1cee591, type: 3}
-  NextNode: {fileID: 1825216448}
+  narrativeText: {fileID: 4900000, guid: 87ccbf507d76e564a9ca40c1c1cee591, type: 3}
+  NextNarrative: {fileID: 1825216448}
 --- !u!1 &1772767771
 GameObject:
   m_ObjectHideFlags: 0
@@ -4008,7 +4008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -4023,8 +4023,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 7034e50b6a09a3b4ea624dc9682c81a1, type: 3}
-  NextNode: {fileID: 754067748}
+  narrativeText: {fileID: 4900000, guid: 7034e50b6a09a3b4ea624dc9682c81a1, type: 3}
+  NextNarrative: {fileID: 754067748}
 --- !u!1 &1825216446
 GameObject:
   m_ObjectHideFlags: 0
@@ -4069,7 +4069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -4084,8 +4084,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 3951dc0195d0e8644b44ebf1f0cd39c1, type: 3}
-  NextNode: {fileID: 551739793}
+  narrativeText: {fileID: 4900000, guid: 3951dc0195d0e8644b44ebf1f0cd39c1, type: 3}
+  NextNarrative: {fileID: 551739793}
 --- !u!1 &1843249242
 GameObject:
   m_ObjectHideFlags: 0
@@ -4130,7 +4130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -4145,8 +4145,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: cdb8cc90ed159234ca3f924c29eb14bf, type: 3}
-  NextNode: {fileID: 617213006}
+  narrativeText: {fileID: 4900000, guid: cdb8cc90ed159234ca3f924c29eb14bf, type: 3}
+  NextNarrative: {fileID: 617213006}
 --- !u!1 &1880627163
 GameObject:
   m_ObjectHideFlags: 0
@@ -4158,7 +4158,7 @@ GameObject:
   - component: {fileID: 1880627164}
   - component: {fileID: 1880627165}
   m_Layer: 0
-  m_Name: DrinksChoiceYes
+  m_Name: DrinksDecisionYes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4191,7 +4191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -4206,8 +4206,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 58fca385b053f954d8ffd7d42bd438c0, type: 3}
-  NextNode: {fileID: 773733601}
+  narrativeText: {fileID: 4900000, guid: 58fca385b053f954d8ffd7d42bd438c0, type: 3}
+  NextNarrative: {fileID: 773733601}
 --- !u!1 &1916842963
 GameObject:
   m_ObjectHideFlags: 0
@@ -4252,11 +4252,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls: []
-  DialogueText: {fileID: 4900000, guid: b7e340d5aa801c147ab25b00a919d519, type: 3}
-  NextNode: {fileID: 1749457178}
+  narrativeText: {fileID: 4900000, guid: b7e340d5aa801c147ab25b00a919d519, type: 3}
+  NextNarrative: {fileID: 1749457178}
 --- !u!1 &1959620634
 GameObject:
   m_ObjectHideFlags: 0
@@ -4301,7 +4301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -4316,8 +4316,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 9a0a3b0e05b39a646a9b4f63a84ce875, type: 3}
-  NextNode: {fileID: 1825216448}
+  narrativeText: {fileID: 4900000, guid: 9a0a3b0e05b39a646a9b4f63a84ce875, type: 3}
+  NextNarrative: {fileID: 1825216448}
 --- !u!1 &2060612239
 GameObject:
   m_ObjectHideFlags: 0
@@ -4362,7 +4362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -4377,8 +4377,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 70342d855bf807a47a3addd47590e9dd, type: 3}
-  NextNode: {fileID: 1843249244}
+  narrativeText: {fileID: 4900000, guid: 70342d855bf807a47a3addd47590e9dd, type: 3}
+  NextNarrative: {fileID: 1843249244}
 --- !u!1 &2066156430
 GameObject:
   m_ObjectHideFlags: 0
@@ -4423,11 +4423,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls: []
-  DialogueText: {fileID: 4900000, guid: 95f8c35adf34e3540a1f11a4eecf0668, type: 3}
-  NextNode: {fileID: 1825216448}
+  narrativeText: {fileID: 4900000, guid: 95f8c35adf34e3540a1f11a4eecf0668, type: 3}
+  NextNarrative: {fileID: 1825216448}
 --- !u!1 &2076808371 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8215019818628058332, guid: f45114fa97e16674ba5e364667d42ff1, type: 3}
@@ -4477,7 +4477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -4492,8 +4492,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: f96c9251031e7124daf8fe7dbe86d6cd, type: 3}
-  NextNode: {fileID: 1487149334}
+  narrativeText: {fileID: 4900000, guid: f96c9251031e7124daf8fe7dbe86d6cd, type: 3}
+  NextNarrative: {fileID: 1487149334}
 --- !u!1 &2112080668
 GameObject:
   m_ObjectHideFlags: 0
@@ -4505,7 +4505,7 @@ GameObject:
   - component: {fileID: 2112080670}
   - component: {fileID: 2112080669}
   m_Layer: 0
-  m_Name: GamesChoice
+  m_Name: GamesDecision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4523,7 +4523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -4538,8 +4538,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 23709cfc552c3ad42ac0d021fdfc0eed, type: 3}
-  NextNode: {fileID: 1202159007}
+  narrativeText: {fileID: 4900000, guid: 23709cfc552c3ad42ac0d021fdfc0eed, type: 3}
+  NextNarrative: {fileID: 1202159007}
 --- !u!4 &2112080670
 Transform:
   m_ObjectHideFlags: 0
@@ -4566,7 +4566,7 @@ GameObject:
   - component: {fileID: 2113329775}
   - component: {fileID: 2113329776}
   m_Layer: 0
-  m_Name: DrinksChoiceNo
+  m_Name: DrinksDecisionNo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4599,7 +4599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -4614,8 +4614,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 7aa90b9fd1a10364e9711e7089a6f32d, type: 3}
-  NextNode: {fileID: 1810770480}
+  narrativeText: {fileID: 4900000, guid: 7aa90b9fd1a10364e9711e7089a6f32d, type: 3}
+  NextNarrative: {fileID: 1810770480}
 --- !u!1 &2119746033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4660,7 +4660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6f69d5fb5c96d4d9065d8db5c7ee4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NodeEvent:
+  NarrativeEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4993332436355886791}
@@ -4675,8 +4675,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  DialogueText: {fileID: 4900000, guid: 05ef8b25eb8df324d8456a825a9132a5, type: 3}
-  NextNode: {fileID: 81948491}
+  narrativeText: {fileID: 4900000, guid: 05ef8b25eb8df324d8456a825a9132a5, type: 3}
+  NextNarrative: {fileID: 81948491}
 --- !u!1001 &4993332436355886785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4774,12 +4774,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f45114fa97e16674ba5e364667d42ff1, type: 3}
+--- !u!1 &4993332436355886786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7314039358218340905, guid: f45114fa97e16674ba5e364667d42ff1, type: 3}
+  m_PrefabInstance: {fileID: 4993332436355886785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4993332436355886791 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5144395090764243803, guid: f45114fa97e16674ba5e364667d42ff1, type: 3}
   m_PrefabInstance: {fileID: 4993332436355886785}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 4993332436355886786}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ce45f10f6246094f9e343272b361d48, type: 3}

@@ -4,9 +4,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueTranslater : MonoBehaviour
+public class NarrativeTranslater : MonoBehaviour
 {
-    public TextBoxHandler textHandler;
+    public TextManager textHandler;
     public GameObject translaterUIWindow;
     public TextMeshProUGUI translaterText;
 
@@ -96,16 +96,16 @@ public class DialogueTranslater : MonoBehaviour
 
     private void TryFindTranslateText()
     {
-        DialogueNode currentNode = textHandler.GetCurrentNode();
+        NarrativeBase currentNode = textHandler.GetCurrentNarration();
 
-        if(currentNode.GetType() == typeof(DialogueNodeSingleTranslate))
+        if(currentNode.GetType() == typeof(NarrativeTextTranslate))
         {
-            TranslateSingle(currentNode as DialogueNodeSingleTranslate);
+            TranslateSingle(currentNode as NarrativeTextTranslate);
             translateCount++;
         }
-        else if(currentNode.GetType() == typeof(DialogueNodeMultiTranslate))
+        else if(currentNode.GetType() == typeof(NarrativeTextDecisionsTranslate))
         {
-            TranslateChoices(currentNode as DialogueNodeMultiTranslate);
+            TranslateChoices(currentNode as NarrativeTextDecisionsTranslate);
             translateCount++;
         }
         else
@@ -120,18 +120,18 @@ public class DialogueTranslater : MonoBehaviour
         foundNothing = true;
     }
 
-    private void TranslateSingle(DialogueNodeSingleTranslate currentNode)
+    private void TranslateSingle(NarrativeTextTranslate currentNode)
     {
         translaterText.text = currentNode.GetTranslation();
     }
 
-    private void TranslateChoices(DialogueNodeMultiTranslate currentNode)
+    private void TranslateChoices(NarrativeTextDecisionsTranslate currentNode)
     {
-        translateRoutine = StartCoroutine(WriteTranslation(currentNode.GetChoices()));
+        translateRoutine = StartCoroutine(WriteTranslation(currentNode.GetDecisions()));
         return;
     }
 
-    private IEnumerator WriteTranslation(List<DialogueChoiceTranslate> gibberishToTranslate)
+    private IEnumerator WriteTranslation(List<NarrativeDecisionTranslate> gibberishToTranslate)
     {
         while(isAnimating)
         {
@@ -140,7 +140,7 @@ public class DialogueTranslater : MonoBehaviour
 
         string workingString = "";
 
-        foreach (DialogueChoiceTranslate gibberish in gibberishToTranslate)
+        foreach (NarrativeDecisionTranslate gibberish in gibberishToTranslate)
         {
             int gibberishLenght = gibberish.GetText().Length;
 

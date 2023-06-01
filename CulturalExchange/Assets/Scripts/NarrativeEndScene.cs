@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DialogueNodeEndScene : DialogueNode
+public class NarrativeEndScene : NarrativeBase
 {
-    public override void OpenNode(TextBoxHandler textHandler)
+    public override void AdvanceNarrative(TextManager textHandler)
     {
         SceneManager.LoadScene("HomeScene");
     }

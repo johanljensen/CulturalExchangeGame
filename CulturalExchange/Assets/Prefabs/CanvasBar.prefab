@@ -203,16 +203,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88765bbeba13d8e4a85b551dd01fed63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SimpleDialogue: {fileID: 8695210952271135835}
-  SimpleDialogueText: {fileID: 2920693328929626121}
-  SimpleDialogueButton: {fileID: 384969402603274170}
-  ChoiceDialogue: {fileID: 3147682789426543750}
-  ChoiceDialoguePrompt: {fileID: 8460359991108169290}
-  ChoiceTexts:
+  narrativeTextBox: {fileID: 8695210952271135835}
+  narrativeText: {fileID: 2920693328929626121}
+  narrativeTextButton: {fileID: 384969402603274170}
+  decisionTextBox: {fileID: 3147682789426543750}
+  decisionTextPrompt: {fileID: 8460359991108169290}
+  decisionTexts:
   - {fileID: 3504879375752565790}
   - {fileID: 8368596522289677464}
   - {fileID: 8825487774492130465}
-  ChoiceButtons:
+  decisionButtons:
   - {fileID: 6122519183323648257}
   - {fileID: 8758090414200578770}
   - {fileID: 1313826686465139391}
@@ -302,7 +302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7545712210616741072}
   m_Layer: 5
-  m_Name: ChoiceDialogue
+  m_Name: Decisions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 7628547030111670517}
   - component: {fileID: 8825487774492130465}
   m_Layer: 5
-  m_Name: ChoiceText3
+  m_Name: DecisionText3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 8682537867168495358}
   - component: {fileID: 8368596522289677464}
   m_Layer: 5
-  m_Name: ChoiceText2
+  m_Name: DecisionText2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -774,7 +774,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4576258598306148651}
   m_Layer: 5
-  m_Name: ChoicePrompt
+  m_Name: DecisionPrompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 2888927354205083080}
   - component: {fileID: 3504879375752565790}
   m_Layer: 5
-  m_Name: ChoiceText1
+  m_Name: DecisionText1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2072,7 +2072,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2058331409546306402}
   m_Layer: 5
-  m_Name: SimpleDialogue
+  m_Name: SimpleNarrative
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

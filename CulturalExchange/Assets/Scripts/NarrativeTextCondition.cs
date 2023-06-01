@@ -3,33 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DialogueNodeCondition : DialogueNode
+public class NarrativeTextCondition : NarrativeBase
 {
     [SerializeField]
     TextAsset DialogueText;
 
     [SerializeField]
-    DialogueNode defaultNode;
+    NarrativeBase defaultNode;
     [SerializeField]
-    DialogueNode conditionalNode;
+    NarrativeBase conditionalNode;
 
     [SerializeField]
-    NarrativeStates.StoryStates Condition;
+    StoryStates.StoryState Condition;
 
-    public override void OpenNode(TextBoxHandler textHandler)
+    public override void AdvanceNarrative(TextManager textHandler)
     {
         Debug.Log("Opening condition node");
-        RunNodeEvent();
-        textHandler.SetSimpleDialogue(this);
+        RunNarrativeEvent();
+        textHandler.SetNarration(this);
     }
     public override string GetText()
     {
         return DialogueText.text;
     }
 
-    public override DialogueNode GetNextNode()
+    public override NarrativeBase GetNextNarrative()
     {
-        NarrativeStates states = FindObjectOfType<NarrativeStates>();
+        StoryStates states = FindObjectOfType<StoryStates>();
         if (states != null)
         {
             if (states.IsStateChecked(Condition))

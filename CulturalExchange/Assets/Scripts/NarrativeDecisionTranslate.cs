@@ -2,22 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class DialogueChoiceTranslate : MonoBehaviour
+public class NarrativeDecisionTranslate : MonoBehaviour
 {
     [SerializeField]
-    TextAsset ChoiceText;
+    TextAsset decisionTextFile;
 
     [SerializeField]
-    TextAsset TranslatedText;
+    TextAsset translatedTextFile;
 
     public string GetText()
     {
-        return ChoiceText.text;
+        return decisionTextFile.text;
     }
 
     public string GetTranslation()
     {
-        return TranslatedText.text;
+        return translatedTextFile.text;
     }
 }

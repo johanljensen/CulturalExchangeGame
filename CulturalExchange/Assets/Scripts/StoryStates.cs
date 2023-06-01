@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NarrativeStates : MonoBehaviour
+public class StoryStates : MonoBehaviour
 {
-    public enum StoryStates
+    public enum StoryState
     {
         None,
         CorrectMilk,
@@ -14,38 +14,38 @@ public class NarrativeStates : MonoBehaviour
     }
 
     [SerializeField]
-    List<StoryStates> CheckedStates;
+    List<StoryState> CheckedStates;
 
     public void ChoseCorrectMilk()
     {
-        CheckedStates.Add(StoryStates.CorrectMilk);
+        CheckedStates.Add(StoryState.CorrectMilk);
         CheckCorrectGroceries();
     }
 
     public void ChoseCorrectBread()
     {
-        CheckedStates.Add(StoryStates.CorrectBread);
+        CheckedStates.Add(StoryState.CorrectBread);
         CheckCorrectGroceries();
     }
     public void ChoseCorrectMeat()
     {
-        CheckedStates.Add(StoryStates.CorrectMeat);
+        CheckedStates.Add(StoryState.CorrectMeat);
         CheckCorrectGroceries();
     }
 
     private void CheckCorrectGroceries()
     {
-        if (IsStateChecked(StoryStates.CorrectMilk) &&
-            IsStateChecked(StoryStates.CorrectBread) &&
-            IsStateChecked(StoryStates.CorrectMeat))
+        if (IsStateChecked(StoryState.CorrectMilk) &&
+            IsStateChecked(StoryState.CorrectBread) &&
+            IsStateChecked(StoryState.CorrectMeat))
         {
-            CheckedStates.Add(StoryStates.AllCorrectGroceries);
+            CheckedStates.Add(StoryState.AllCorrectGroceries);
         }
     }
 
-    public bool IsStateChecked(StoryStates state)
+    public bool IsStateChecked(StoryState state)
     {
-        if (state == StoryStates.None)
+        if (state == StoryState.None)
         {
             return true;
         }
