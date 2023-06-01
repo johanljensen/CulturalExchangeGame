@@ -89,13 +89,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88765bbeba13d8e4a85b551dd01fed63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  narrativeTextBox: {fileID: 0}
-  narrativeText: {fileID: 0}
-  narrativeTextButton: {fileID: 0}
-  decisionTextBox: {fileID: 0}
-  decisionTextPrompt: {fileID: 0}
-  decisionTexts: []
-  decisionButtons: []
+  narrativeTextBox: {fileID: 6523695265808939875}
+  narrativeText: {fileID: 768753338898540337}
+  narrativeTextButton: {fileID: 2843149795160916098}
+  decisionTextBox: {fileID: 688376591585395646}
+  decisionTextPrompt: {fileID: 6289970238769893746}
+  decisionTexts:
+  - {fileID: 1333240543845968678}
+  - {fileID: 6197076506500414368}
+  - {fileID: 6366159483347043225}
+  decisionButtons:
+  - {fileID: 8562685185827548729}
+  - {fileID: 6605011373072621034}
+  - {fileID: 3465779827694083463}
 --- !u!1 &462219542933799252
 GameObject:
   m_ObjectHideFlags: 0
