@@ -594,11 +594,11 @@ MonoBehaviour:
           m_StringArgument: 4:06
           m_BoolArgument: 0
         m_CallState: 2
-  ChoicePrompt: {fileID: 4900000, guid: 7eb7c3b2601940345a4fb2e41aef8485, type: 3}
-  Choices:
+  DecisionPrompt: {fileID: 4900000, guid: 7eb7c3b2601940345a4fb2e41aef8485, type: 3}
+  Decisions:
   - {fileID: 239607180}
   - {fileID: 239607181}
-  NextNodes:
+  NextNarratives:
   - {fileID: 193998225}
   - {fileID: 294771156}
 --- !u!114 &239607180
@@ -2573,11 +2573,11 @@ MonoBehaviour:
           m_StringArgument: 4:04
           m_BoolArgument: 0
         m_CallState: 2
-  ChoicePrompt: {fileID: 4900000, guid: 1546121df57239a42a7fb266cbeea16e, type: 3}
-  Choices:
+  DecisionPrompt: {fileID: 4900000, guid: 1546121df57239a42a7fb266cbeea16e, type: 3}
+  Decisions:
   - {fileID: 1158013926}
   - {fileID: 1158013925}
-  NextNodes:
+  NextNarratives:
   - {fileID: 827406339}
   - {fileID: 1158029002}
 --- !u!114 &1158013925
@@ -3496,11 +3496,11 @@ MonoBehaviour:
           m_StringArgument: 4:53
           m_BoolArgument: 0
         m_CallState: 2
-  ChoicePrompt: {fileID: 4900000, guid: 16659d8b3e17b5e4c8571875cb4459eb, type: 3}
-  Choices:
+  DecisionPrompt: {fileID: 4900000, guid: 16659d8b3e17b5e4c8571875cb4459eb, type: 3}
+  Decisions:
   - {fileID: 1669185799}
   - {fileID: 1669185798}
-  NextNodes:
+  NextNarratives:
   - {fileID: 452244422}
   - {fileID: 1772340544}
 --- !u!114 &1669185798

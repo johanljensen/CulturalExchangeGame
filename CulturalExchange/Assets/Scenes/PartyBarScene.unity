@@ -212,12 +212,12 @@ MonoBehaviour:
   NarrativeEvent:
     m_PersistentCalls:
       m_Calls: []
-  ChoicePrompt: {fileID: 4900000, guid: 6c0b1b6ded5620441887ab240c8c0a5e, type: 3}
-  Choices:
+  DecisionPrompt: {fileID: 4900000, guid: 6c0b1b6ded5620441887ab240c8c0a5e, type: 3}
+  Decisions:
   - {fileID: 45223223}
   - {fileID: 45223222}
   - {fileID: 45223221}
-  NextNodes:
+  NextNarratives:
   - {fileID: 1463352085}
   - {fileID: 2112080669}
   - {fileID: 1495304983}
@@ -1845,11 +1845,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  ChoicePrompt: {fileID: 4900000, guid: 72de0eb28b20d0646af42a2540a28a9f, type: 3}
-  Choices:
+  DecisionPrompt: {fileID: 4900000, guid: 72de0eb28b20d0646af42a2540a28a9f, type: 3}
+  Decisions:
   - {fileID: 990383583}
   - {fileID: 990383582}
-  NextNodes:
+  NextNarratives:
   - {fileID: 2113329776}
   - {fileID: 1880627165}
 --- !u!1 &1020253585
@@ -2926,11 +2926,11 @@ MonoBehaviour:
   NarrativeEvent:
     m_PersistentCalls:
       m_Calls: []
-  ChoicePrompt: {fileID: 4900000, guid: 0f39544073720b44a8edaeb165cc18ff, type: 3}
-  Choices:
+  DecisionPrompt: {fileID: 4900000, guid: 0f39544073720b44a8edaeb165cc18ff, type: 3}
+  Decisions:
   - {fileID: 1028910147}
   - {fileID: 1510777451}
-  NextNodes:
+  NextNarratives:
   - {fileID: 433548125}
   - {fileID: 1603755605}
 --- !u!1 &1385336658
@@ -3252,11 +3252,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  ChoicePrompt: {fileID: 4900000, guid: 70c04f44cab0f5643abb44ef3942014d, type: 3}
-  Choices:
+  DecisionPrompt: {fileID: 4900000, guid: 70c04f44cab0f5643abb44ef3942014d, type: 3}
+  Decisions:
   - {fileID: 1484102444}
   - {fileID: 1484102443}
-  NextNodes:
+  NextNarratives:
   - {fileID: 1153330580}
   - {fileID: 1059316041}
 --- !u!1 &1487149332
@@ -3650,12 +3650,12 @@ MonoBehaviour:
   NarrativeEvent:
     m_PersistentCalls:
       m_Calls: []
-  ChoicePrompt: {fileID: 4900000, guid: 25c246caf993a0a45b010ad2d90818dd, type: 3}
-  Choices:
+  DecisionPrompt: {fileID: 4900000, guid: 25c246caf993a0a45b010ad2d90818dd, type: 3}
+  Decisions:
   - {fileID: 1542872822}
   - {fileID: 1542872821}
   - {fileID: 1542872820}
-  NextNodes:
+  NextNarratives:
   - {fileID: 1056359067}
   - {fileID: 742353224}
   - {fileID: 1020253586}
